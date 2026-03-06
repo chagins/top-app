@@ -15,7 +15,10 @@ const eslintConfig = defineConfig([
     },
   },
   {
+    files: ['**/*.{ts,tsx}'],
     languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       parserOptions: {
         projectService: true,
       },
@@ -28,7 +31,6 @@ const eslintConfig = defineConfig([
     'out/**',
     'build/**',
     'next-env.d.ts',
-    'eslint.config.mjs',
     'postcss.config.mjs',
   ]),
 ]);
